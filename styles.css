@@ -1,0 +1,157 @@
+.point {
+  fill: #83cf1e;
+  stroke: #75b91b;
+  stroke-width: 1px;
+}
+.point.hidden {
+  opacity: 0;
+}
+.point.fatal {
+  fill: #cc0000;
+  stroke: #b10000;
+}
+.point.nonfatal {
+  fill: #e6b800;
+  stroke: #cea500;
+}
+.axis {
+  font: 12px "Segoe UI";
+}
+.axis path,
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display:none;
+} 
+.label {
+  fill:black;
+  font: 12px sans-serif;
+  font-weight: bold;
+}
+.d3-tip {
+  line-height: normal;
+  padding: 3px;
+  background: rgba(43, 43, 43, 0.9);
+  color: #fff;
+  border-radius: 4px;
+  font: 11px sans-serif;
+  text-align: center;
+}
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+/* CSS for things that aren't info-vis related */
+.title {
+  display: inline-block;
+}
+
+.desc-wrapper {
+  min-width: 200px;
+  max-width: 200px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(224, 224, 224);
+  background-color: rgb(61, 61, 61);
+  border: 3px solid rgb(29, 29, 29);
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.description-wrapper {
+  min-width: 200px;
+  max-width: 200px;
+  height: 550px;
+  vertical-align: top;
+  margin-left: 12px;
+  margin-right: 22px;
+}
+
+.title-wrapper {
+  text-align: center;
+}
+
+.content-wrapper {
+  display: inline-block;
+}
+
+.container {
+  min-width: 1100px; 
+}
+
+.nav-btn {
+  height: 30px;
+  width: 70px;
+  margin-left: 25px;
+  font: bold 14px sans-serif;
+}
+
+/* Code for pretty button transition hover stuff */
+button.animated-button.thar-two {
+	color: #000;
+	cursor: pointer;
+	position: relative;
+  border: 2px solid #F7CA18;
+  border-radius: 3px;
+  background-color: transparent;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+button.animated-button.thar-two:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: ntwo;
+}
+button.animated-button.thar-two:hover:before {
+	top: 0%;
+	bottom: auto;
+	height: 100%;
+}
+button.animated-button.thar-two:before {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+button.animated-button.thar-two:focus {
+  outline: 0;
+}
+
+button.animated-button.thar-two:active {
+  border-color: rgb(194, 155, 25);
+  background: rgb(194, 155, 25);
+}
+
+body {
+  background-color: rgb(255, 253, 241);
+}
+
+h1 { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 36px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }

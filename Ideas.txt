@@ -1,0 +1,12 @@
+Which airports are the most dangerous?
+
+Can I plot it as dots on a map of the earth?
+
+Assuming you get into an incident, what's the best make to be in?
+  %injured - find the lowest
+  %dead - find the lowest
+
+Graph of all crashes over time
+x=time
+y=injuries? fatalities? injuries + fatalities? 
+on hover, display date, injuries, and fatalities, and maybe accident number?
